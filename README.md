@@ -1,5 +1,6 @@
 # Dental_Implant
 
+
 ## Documentation
 
 Welcome to the Dental Implant website project! This project includes a backend server built with Node.js and Express, a frontend website built with React.js, and content management using Sanity Studio.
@@ -14,9 +15,11 @@ Welcome to the Dental Implant website project! This project includes a backend s
 
 Making changes to your project:
 
-    To change the services cards,  use the "Post" feature to add, edit, or delete services as needed.
-    To change gallery to your site,  use the "Gallery" feature to upload new images or delete,change the  existing ones.
-    To change the reviews section,  use the "Add Review" feature to add or delete reviews.
+To change the services cards,  use the "Post" feature to add, edit, or delete services as needed.
+
+To change gallery to your site,  use the "Gallery" feature to upload new images or delete,change the  existing ones.
+
+To change the reviews section,  use the "Add Review" feature to add or delete reviews.
 
 Note: If you are unsure about making changes or need further assistance, please reach out to the project administrator for guidance.
 
