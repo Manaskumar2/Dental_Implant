@@ -1,0 +1,32 @@
+.contact-us-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #38aeb5;
+  color: #fff;
+  /* padding: ; */
+}
+
+.contact-us-heading {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.contact-us-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-address,
+.contact-us-email,
+.contact-us-phone {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 3%;
+}
+
+

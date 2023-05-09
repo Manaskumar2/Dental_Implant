@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+
+  /* padding-bottom: 100px; */
+}
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --button-primary-background: #eda230;
+  --button-primary-text: #fff;
+  --hero-height: calc(100vh - 20vh);
+
+}

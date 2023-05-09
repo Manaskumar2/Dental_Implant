@@ -1,0 +1,70 @@
+.contact-heading{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #3785b1;
+  }
+  
+  .input-row {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
+
+  .first-row{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .half {
+    width: 48%;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px 1px 10px 35px;
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #6b6b6b;
+  }
+  
+  button[type="submit"] {
+    background-color: #69ba48;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.5rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 80%;
+    margin: auto;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #53da1e;
+  }
+  
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 20px;
+    color: #69ba48;
+    margin-right: 5px;
+  }
+  
+  
+  

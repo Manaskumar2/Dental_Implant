@@ -1,0 +1,88 @@
+.navbar {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	background-color: #fff;
+	color: #222;
+	border-radius: 100px;
+	padding: 0.5rem;
+	z-index: 10;
+	height: auto;
+	border: 2px solid #579BB1;
+  }
+  
+  .navbar-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .nav-item {
+	margin: 0 10px;
+  }
+  
+  .nav-link {
+	color: #222;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: small;
+	font-weight: 600;
+	cursor: pointer;
+	transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-item.phone {
+	background-color: black;
+	border-radius: 20px;
+	padding: 0.5rem 2rem;
+  }
+  
+  .nav-item.phone button  {
+	color: #fff;
+  }
+  
+  .nav-link:hover {
+	color: #3785b1;
+  }
+  
+  .nav-item.book {
+	background: linear-gradient(to right, #3785b1, #64b6d1);
+	color: #fff;
+	border-radius: 20px;
+	padding: 0.5rem 2rem;
+  }
+  
+  .nav-item.book button {
+	color: #fff;
+	font-size: 0.9rem;
+  }
+  
+  /* Responsive Styles */
+  
+  @media screen and (max-width: 768px) {
+	.navbar {
+	  top: 5px;
+	  right: 5px;
+	  border-radius: 50px;
+	  padding: 0.3rem;
+	}
+  
+	.navbar-nav {
+	  flex-direction: column;
+	  align-items: flex-end;
+	}
+  
+	.nav-item {
+	  margin: 5px 0;
+	}
+  
+	.nav-item.phone,
+	.nav-item.book {
+	  border-radius: 10px;
+	  padding: 0.3rem 1rem;
+	}
+  }
+  

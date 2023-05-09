@@ -1,0 +1,18 @@
+.care-us-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+  }
+  
+  .care-us-heading {
+    margin-bottom: 2%;
+  }
+  
+  .care-us-line {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  

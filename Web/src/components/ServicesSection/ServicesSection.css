@@ -1,0 +1,134 @@
+.services-section {
+	margin-top: 2rem;
+	background-color: #1e77ab;
+	height: 300px;
+	
+}
+
+.services-header {
+	font-size: 1.2rem;
+	color: #fff;
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.services-header::after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 3px;
+	background-color: var(--button-primary-background);
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 20px;
+}
+
+.services-text {
+	font-size: 1rem;
+	color: #fff;
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 1rem;
+}
+
+.services-container {
+	margin: 0 auto;
+	margin-top: -100px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5%;
+	width: 60vw;
+}
+
+
+.card {
+	background-color: #f2ffff;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	/* overflow: hidden; */
+}
+
+.card-header img {
+	width: 100%;
+}
+
+.card-body {
+	padding: 1rem;
+}
+
+.card-title {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.card-description {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+.card-button {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	border: 1px solid #000;
+	border-radius: 5px;
+	color: #000;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+
+.btn-container {
+	text-align: center;
+}
+
+.all-services-button {
+	display: inline-block;
+	background-color: var(--button-primary-background);
+	color: var(--button-primary-text);
+	padding: 0.5rem 2rem;
+	border-radius: 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: background-color 0.3s ease;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+
+.all-services-button:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+
+/* small and medium screen */
+
+
+@media screen and (max-width: 768px) {
+	.services-section {
+		height: auto;
+		
+	}
+	.services-container {
+		grid-template-columns: 1fr;
+		width: 80vw;
+		margin-top: 0;
+		gap:1%;
+	}
+	.services-text {
+		width: 80%;
+	}
+	.card {
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+	}
+	.btn-container {
+		margin-top: 4rem;
+	}
+}

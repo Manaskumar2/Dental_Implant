@@ -1,0 +1,119 @@
+.hero-section {
+	position: relative;
+	height: var(--hero-height);
+	overflow: hidden; /* Add overflow: hidden to hide overflowing content */
+  }
+  
+  .hero-background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	animation: slideImages 40s infinite; /* Add animation for sliding effect */
+  }
+  
+  /* @keyframes slideImages {
+	0% {
+	  background-image: url("https://www.mouthhealer.com/img/slide1.jpg");
+	}
+	33% {
+	  background-image: url("https://www.mouthhealer.com/img/slide2.jpg");
+	}
+	66% {
+	  background-image: url("https://www.mouthhealer.com/img/slide3.jpg");
+	}
+	100% {
+	  background-image: url("https://www.mouthhealer.com/img/slide1.jpg");
+	}
+  }
+   */
+  /* Rest of the styles remain the same */
+  
+
+.hero-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* text-align: center; */
+}
+
+.hero-header {
+	font-size: 3rem;
+	color: #fff;
+}
+
+.hero-subtitle {
+	font-size: 1.5rem;
+	color: #fff;
+	margin-top: 1rem;
+	width: 70%;
+}
+
+.hero-read-more-button {
+	display: inline-block;
+	background-color: var(--button-primary-background);
+	color: var(--button-primary-text);
+	padding: 1rem 2rem;
+	border-radius: 40px;
+	margin-top: 2rem;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.hero-read-more-button:hover {
+	background-color: #000;
+	color: #fff;
+}
+.arrow-buttons {
+	position: absolute;
+	top: 50%;
+	display: flex;
+	align-items: center;
+	transform: translateY(-50%);
+  }
+  
+  .previous-button,
+  .next-button {
+	background-color: transparent;
+	border: none;
+	font-size: 2rem;
+	color: #fff;
+	cursor: pointer;
+	transition: color 0.3s ease;
+  }
+  
+  .previous-button:hover,
+  .next-button:hover {
+	color: #3785b1;
+  }
+  
+  .previous-button {
+	margin-right: 1rem;
+  }
+  
+  .next-button {
+	margin-left: 82rem;
+  }
+  
+
+/* small screen  */
+
+@media screen and (max-width: 768px) {
+	.hero-header {
+		font-size: 2rem;
+	}
+
+	.hero-subtitle {
+		font-size: 1rem;
+		width: 90%;
+	}
+	
+	.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
