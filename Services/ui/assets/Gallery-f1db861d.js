@@ -1,0 +1,6 @@
+import{r as t,b as x,j as e,L as m}from"./index-55c8c7a0.js";import{N as h,M as j,F as u}from"./Navbar-b3ab9993.js";function y(){var r,c;const[a,n]=t.useState([]),[s,i]=t.useState(null),d=l=>{i(l)},o=()=>{i(null)};return t.useEffect(()=>{x.fetch(`
+    *[_type == "gallery"] {
+      title,
+      "imageUrl": image.asset->url
+    }
+  `).then(l=>{n(l)}).catch(console.error)},[]),e.jsxs(e.Fragment,{children:[e.jsx(h,{}),e.jsx("div",{className:"max-w-7xl px-5 mx-auto mb-10 mt-10",children:e.jsx("h1",{className:"text-4xl lg:text-6xl mb-6 capitalize",children:"All Photos"})}),e.jsxs("div",{className:"gallery",children:[a.map(l=>e.jsxs("div",{className:"gallery-item",children:[e.jsx("img",{src:l.imageUrl,alt:l.title,onClick:()=>d(l.id)}),e.jsxs("div",{className:"gallery-overlay",children:[e.jsx("h3",{children:l.alt}),e.jsx("p",{children:l.details})]})]},l.id)),s!==null&&e.jsx("div",{className:"gallery-modal",onClick:o,children:e.jsx("img",{src:(r=a.find(l=>l.id===s))==null?void 0:r.src,alt:(c=a.find(l=>l.id===s))==null?void 0:c.alt})}),e.jsx("div",{})]}),e.jsx("div",{className:"max-w-7xl mx-auto px-5 mb-5 py-8 flex items-end rounded justify-end",children:e.jsx(m,{to:"/",className:"bg-black py-2 px-8  rounded text-white tracking-wide hover:opacity-75 tranistion-all duration-200",children:"Back to Homepage"})}),e.jsx(j,{}),e.jsx(u,{})]})}export{y as default};
