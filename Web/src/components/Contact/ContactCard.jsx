@@ -64,7 +64,8 @@ function ContactCard() {
                 return response;
             }
         } catch (error) {
-            toast.error(error, { ...toastProps });
+            const errorMessage = error.response ? error.response.data.message : error.message;
+            toast.error(errorMessage || "Something went wrong", { ...toastProps });
             setLoading(false); // Set loading state back to false
             return;
         }
