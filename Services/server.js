@@ -1,6 +1,6 @@
 const dotenv = require("dotenv");
 const express = require("express");
-const route = require("./routes/route");
+const route = require("./src/routes/route");
 const app = express();
 const cors = require('cors')
 const path =  require('path');
@@ -21,7 +21,7 @@ const upload = multer();
 app.use(upload.any());
 
 
-const rootDir = path.resolve(__dirname, "..");
+const rootDir = path.resolve(__dirname);
 
 if (process.env.NODE_ENV === "development") {
   dotenv.config({ path: ".env.development" });
