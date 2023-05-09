@@ -1,7 +1,5 @@
 /node_modules
 
-/uploads
-
 /ui
 
 package-lock.json
