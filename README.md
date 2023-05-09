@@ -61,5 +61,5 @@ Content Management:
     Start the Sanity server using the command:
     npm start
 
-    Thank you for using the Dental Implant website project! If you have any questions or issues, please feel free to reach out to the project administrator for assistance.
+ Thank you for using the Dental Implant website project! If you have any questions or issues, please feel free to reach out to the project administrator for assistance.
     
