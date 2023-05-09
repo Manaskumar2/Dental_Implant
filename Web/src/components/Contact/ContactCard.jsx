@@ -23,19 +23,28 @@ function ContactCard() {
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
     const [comment, setComment] = useState('');
-
+    const [loading, setLoading] = useState(false);
+    
+    
     const handleSubmit = async (event) => {
         event.preventDefault();
+        setLoading(true);
+
+
         // Check if the phone number is valid
         const phoneRegex = /^[0-9]{10}$/; // Regular expression to match a 10-digit phone number
         if (!phoneRegex.test(phone)) {
             toast.error("Please enter a valid phone number", toastProps);
+            setLoading(false); // Set loading state back to false
             return;
         }
         if (!/^\S+@\S+\.\S+$/.test(email)) {
             toast.error("Please enter a valid email address", toastProps);
+            setLoading(false); // Set loading state back to false
             return;
         }
+
+        
         try {
             const response = await axios.post(`${import.meta.env.VITE_API_URL}/createAppontments`, {
                 name,
@@ -50,10 +59,12 @@ function ContactCard() {
                 setPhone('');
                 setEmail('');
                 setComment('');
+                setLoading(false); // Set loading state back to false
                 return response;
             }
         } catch (error) {
             toast.error(error, toastProps);
+            setLoading(false); // Set loading state back to false
             return;
         }
     };
@@ -82,7 +93,10 @@ function ContactCard() {
                 <textarea value={comment} placeholder='Comment' onChange={(e) => setComment(e.target.value)} style={{ textTransform: 'none' }} />
             </div>
             <div className="input-row">
-                <button type="submit">SUBMIT</button>
+                <button type="submit" disabled={loading}>
+                    {loading ? <div className="loader"></div> : "SUBMIT"}
+                </button>
+
             </div>
         </form>
     );
