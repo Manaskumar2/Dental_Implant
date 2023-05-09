@@ -34,12 +34,12 @@ function ContactCard() {
         // Check if the phone number is valid
         const phoneRegex = /^[0-9]{10}$/; // Regular expression to match a 10-digit phone number
         if (!phoneRegex.test(phone)) {
-            toast.error("Please enter a valid phone number", toastProps);
+            toast.error("Please enter a valid phone number", { ...toastProps });
             setLoading(false); // Set loading state back to false
             return;
         }
         if (!/^\S+@\S+\.\S+$/.test(email)) {
-            toast.error("Please enter a valid email address", toastProps);
+            toast.error("Please enter a valid email address", { ...toastProps });
             setLoading(false); // Set loading state back to false
             return;
         }
@@ -54,16 +54,17 @@ function ContactCard() {
             });
             console.log(response);
             if(response.status===200){
-                toast.success("Appointment Created Succesfully",toastProps);
+                toast.success("Appointment Created Succesfully", { ...toastProps });
                 setName('');
                 setPhone('');
                 setEmail('');
                 setComment('');
                 setLoading(false); // Set loading state back to false
+                console.log(response)
                 return response;
             }
         } catch (error) {
-            toast.error(error, toastProps);
+            toast.error(error, { ...toastProps });
             setLoading(false); // Set loading state back to false
             return;
         }
