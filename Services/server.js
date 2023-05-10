@@ -9,9 +9,11 @@ const path =  require('path');
 app.use(
   cors({
     credentials: true,
-    origin: ["http://localhost:3000"],
+    origin: ["http://globodentdentalspa.com", "http://localhost:3000","http://localhost:3333"]
   })
 );
+
+
 
 
 const multer = require("multer");

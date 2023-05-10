@@ -7,6 +7,8 @@ Welcome to the Dental Implant website project! This project includes a backend s
 
  In order to make changes to your website, you will need to access the Sanity Studio dashboard.
 
+ add admin in sanity dashboard - https://manage.sanity.io/manage
+
  Accessing the Sanity Studio Dashboard:
 
     Go to https://dental.sanity.studio/desk
