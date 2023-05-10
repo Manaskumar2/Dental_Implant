@@ -191,7 +191,6 @@ function Navbar() {
                           value={name}
                           placeholder="Your Name*"
                           onChange={(e) => setName(e.target.value)}
-                          className="px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500"
                           style={{ textTransform: 'none' }}
                           name='name'
                         />
@@ -203,7 +202,6 @@ function Navbar() {
                           value={phone}
                           placeholder="Mobile Number*"
                           onChange={(e) => setPhone(e.target.value)}
-                          className="px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500"
                           style={{ textTransform: 'none' }}
                           name='phone'
                         />
@@ -215,7 +213,6 @@ function Navbar() {
                           value={email}
                           placeholder="Email*"
                           onChange={(e) => setEmail(e.target.value)}
-                          className="px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500"
                           style={{ textTransform: 'none' }}
                           name='email'
                         />
@@ -226,7 +223,6 @@ function Navbar() {
                           value={comment}
                           placeholder="Comment*"
                           onChange={(e) => setComment(e.target.value)}
-                          className="border border-black rounded-lg  focus:ring-2 focus:ring-blue-500"
                           style={{ textTransform: 'none' }}
                           name='comment'
                         ></textarea>
