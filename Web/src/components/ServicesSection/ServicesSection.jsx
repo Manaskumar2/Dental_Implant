@@ -1,11 +1,16 @@
 import "./ServicesSection.css";
 import { client } from "../../lib/client"
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const ServicesSection = () => {
   const [ServiceCard, setServiceCard] = useState([]);
+  const navigate = useNavigate();
+
+  const navigateToServices = () => {
+    navigate("/services");
+  }
 
   useEffect(() => {
     client.fetch(`
@@ -52,8 +57,8 @@ const ServicesSection = () => {
                 )}
               </div>
               <div className="card-body">
-                <h2 className="card-title capitalize">{ServicesCard.title}</h2>
-                <p className="card-description leading-relaxed">
+                <h2 className="capitalize card-title">{ServicesCard.title}</h2>
+                <p className="leading-relaxed card-description">
                   {`${ServicesCard.body[0].children[0].text.substring(0, 140)}...`}
                 </p>
                 <button  className="card-button">
@@ -65,14 +70,11 @@ const ServicesSection = () => {
         ))}
       </div>
 
-      <Link to={`/services`}>
         <div className='btn-container'>
-          <button  className='all-services-button'>
+          <button className='all-services-button' onClick={navigateToServices}>
             View all Services
           </button>
         </div>
-      </Link>
-      
 
     </>
   );

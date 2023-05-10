@@ -1,7 +1,7 @@
 
 import React, { Suspense } from "react";
 import {Route, Routes } from "react-router-dom";
-import {Gallery, HomePage, Services, ServicesPost} from "./importPages";
+import {Gallery, HomePage, Services, ServicesPost, ThankYou} from "./importPages";
 
 export const AppRoutes = () => {
   return (
@@ -25,6 +25,12 @@ export const AppRoutes = () => {
       <Route path="/gallery" element={
         <Suspense>
           <Gallery />
+        </Suspense>
+      }
+      />
+      <Route path="/thankyou" element={
+        <Suspense>
+          <ThankYou />
         </Suspense>
       }
       />
