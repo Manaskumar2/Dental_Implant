@@ -86,6 +86,13 @@
   margin: auto;
 }
 
+.input-row {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
   
   /* Responsive Styles */
   

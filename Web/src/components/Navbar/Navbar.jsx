@@ -3,6 +3,10 @@ import './Navbar.css';
 import {useNavigate } from "react-router";
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
+import { BsPerson } from 'react-icons/bs'
+import { FiPhoneCall } from 'react-icons/fi'
+import { MdOutlineEmail } from 'react-icons/md'
+import { TfiCommentAlt } from 'react-icons/tfi'
 import { toast } from "react-hot-toast";
 import axios from 'axios';
 
@@ -180,45 +184,49 @@ function Navbar() {
                   </Dialog.Title>
                   <div className="mt-4">
                     <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-                      <div className="mb-4">
+                      <div className="mb-4 input-row">
+                        <BsPerson className="icon" />
                         <input
                           type="text"
                           value={name}
                           placeholder="Your Name*"
                           onChange={(e) => setName(e.target.value)}
-                          className="px-4 py-3 border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500"
                           style={{ textTransform: 'none' }}
                           name='name'
                         />
                       </div>
-                      <div className="mb-4">
+                      <div className="mb-4 input-row">
+                        <FiPhoneCall className="icon" />
                         <input
                           type="text"
                           value={phone}
                           placeholder="Mobile Number*"
                           onChange={(e) => setPhone(e.target.value)}
-                          className="px-4 py-3 border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500"
                           style={{ textTransform: 'none' }}
                           name='phone'
                         />
                       </div>
-                      <div className="mb-4">
+                      <div className="mb-4 input-row">
+                        <MdOutlineEmail className="icon" />
                         <input
                           type="email"
                           value={email}
                           placeholder="Email*"
                           onChange={(e) => setEmail(e.target.value)}
-                          className="px-4 py-3 border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500"
                           style={{ textTransform: 'none' }}
                           name='email'
                         />
                       </div>
-                      <div className="mb-4">
+                      <div className="mb-4 input-row">
+                        <TfiCommentAlt className="icon" />
                         <textarea
                           value={comment}
                           placeholder="Comment*"
                           onChange={(e) => setComment(e.target.value)}
-                          className="px-4 py-3 border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="border border-black rounded-lg  focus:ring-2 focus:ring-blue-500"
                           style={{ textTransform: 'none' }}
                           name='comment'
                         ></textarea>
