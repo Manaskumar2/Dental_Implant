@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Navbar.css';
 import {useNavigate } from "react-router";
 import { Dialog, Transition } from '@headlessui/react'
@@ -23,7 +23,45 @@ export const toastProps = {
 };
 
 
+
+
 function Navbar() {
+  // const primaryNav = document.querySelector('.navbar-nav');
+  // const navToggle = document.querySelector('.mobile-nav-toggle');
+
+  // navToggle.addEventListener('click', () => {
+  //   const visibility = primaryNav.getAttribute('data-visible');
+  //   console.log(visibility)
+  // })
+  
+  useEffect(() => {
+    const navToggle = document.querySelector('.mobile-nav-toggle');
+
+    const handleClick = () => {
+      const primaryNav = document.querySelector('.navbar-nav');
+      const visibility = primaryNav.getAttribute('data-visible');
+      console.log(visibility);
+      if(visibility === 'false'){
+        primaryNav.setAttribute('data-visible',true);
+        navToggle.setAttribute('aria-expanded',true);
+      } else {
+        primaryNav.setAttribute('data-visible', false);
+        navToggle.setAttribute('aria-expanded', false);
+
+      }
+    };
+
+    if (navToggle) {
+      navToggle.addEventListener('click', handleClick);
+    }
+
+    return () => {
+      if (navToggle) {
+        navToggle.removeEventListener('click', handleClick);
+      }
+    };
+  }, []);
+  
 
   const [isOpen, setIsOpen] = useState(false)
   const navigate = useNavigate();
@@ -126,15 +164,17 @@ function Navbar() {
   
   return (
     <>
+    <button className='mobile-nav-toggle' aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+    
     <nav className='navbar'>
-      <ul className='navbar-nav'>
+      <ul id="primary-navigation" data-visible="false" className='navbar-nav'>
           <li className='nav-item' >
-          <div className='nav-link' onClick={navigateToHome}>
+            <div className='nav-link' onClick={navigateToHome}>
               Home
             </div>
           </li>
           <li className='nav-item'>
-          <div className='nav-link' onClick={navigateToServices}>
+            <div className='nav-link' onClick={navigateToServices}>
               Services
             </div>
           </li>
