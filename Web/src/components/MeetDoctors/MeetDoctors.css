@@ -27,7 +27,7 @@
 .doctor-card-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 2rem;
+	margin-top: rem;
 }
 
 
@@ -82,8 +82,9 @@
 }
 
 .doctorImage>img {
-	width: 100%;
-	height: auto;
+	width: 50rem;
+	height: 15.2rem;
+	border-radius: 12px;
 }
 
 .doctorContent {

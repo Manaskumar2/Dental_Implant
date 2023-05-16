@@ -13,9 +13,14 @@ const HeroSection = () => {
   };
 
   const images = [
+    'https://www.mouthhealer.com/img/slide3.jpg',
     'https://www.mouthhealer.com/img/slide1.jpg',
     'https://www.mouthhealer.com/img/slide2.jpg',
-    'https://www.mouthhealer.com/img/slide3.jpg',
+   
+  
+    
+   
+    
     // Add more image URLs as needed
   ];
 
