@@ -169,8 +169,12 @@ function Navbar() {
   return (
     <>
     <button className='mobile-nav-toggle' aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
-    
+    <div className='logo'>
+              <img src="https://i.ibb.co/P5zJXCs/v1-499.png" alt="" srcset="" />
+            </div>
     <nav className='navbar'>
+   
+      
       <ul id="primary-navigation" data-visible="false" className='navbar-nav'>
           <li className='nav-item' >
             <div className='nav-link' onClick={navigateToHome}>
@@ -187,6 +191,13 @@ function Navbar() {
             Contact
           </div>
         </li>
+        <li className='nav-item phone'>
+        
+  <a href='tel:+919855579244' className='nav-item phone'>
+  {/* <FiPhoneCall className='ph-button' /> */}
+    +91-9855579 &nbsp;244
+  </a>
+</li>
         
         <li className='nav-item book'>
           <button className='nav-link' onClick={openModal}>

@@ -32,7 +32,7 @@ const MeetDoctors = () => {
             <div className='doctor-card-container'>
                 <div className='doctorCard'>
                     <div className='doctorImage'>
-                        <img src="https://boost-content-cdn.s3.ap-south-1.amazonaws.com/CustomPages/Images/537ea6a6.jpg" alt="" />
+                        <img src="https://i.ibb.co/Lk9Yt66/0c353fa7-0e81-433a-9181-2f40a95626c4.png" alt="" />
                     </div>
                     <div className='doctorContent'>
                         <h2 className="doctor-card-title" >Dr. Rohit Bansal</h2>
@@ -49,13 +49,13 @@ const MeetDoctors = () => {
 
                 <div className='doctorCard'>
                     <div className='doctorImage'>
-                        <img src="https://boost-content-cdn.s3.ap-south-1.amazonaws.com/CustomPages/Images/537ea6a6.jpg" alt="" />
+                        <img src="https://i.ibb.co/9WpyzzH/c7b7dd53-e826-4d1d-993d-3ae2e5eb607b.png"   alt="" />
                     </div>
                     <div className='doctorContent'>
                         <h2 className="doctor-card-title" >Dr. Aanchal Bansal</h2>
                         <p className="doctor-card-description">Dr. Aanchal Bansal is a very efficient prosthodonist and 
                             implantologist. She specialises in giving a fresh form and function to the new teeth which replaces 
-                            the old ones which get lost due to various dental problems. This is called the rehabilitation of teeth.
+                            the old ones which get lost due to.jpg various dental problems. This is called the rehabilitation of teeth.
                         </p>
                         <button className="doctor-card-button" onClick={openModalAanchal}>READ MORE &rarr;</button>
                     </div>
