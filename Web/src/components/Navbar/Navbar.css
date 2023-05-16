@@ -120,7 +120,7 @@
 
 	height: 100px;
 	top: -2px;
-	left: 10rem; /* Adjusted left property */
+	left: 6rem; /* Adjusted left property */
 	border-radius: 5px 5px 100px 100px;
 	flex: none;
 	order: 0;
@@ -186,15 +186,56 @@
 	  padding: 0.3rem 1rem;
 	}
 	.logo{
+		
 	width: 4rem;
 	height: auto;
 	left: 4rem;
 
 	
   }
+  h1{
+margin-top: 115px;
+margin-left:auto;
+  }
 
 	.nav-link {
 	font-size: 20px;
  	}
   }
+  @media screen and (max-width: 320px) {
+  .logo {
+    left: 1rem;
+	display: none
+	;
+  }
+  
+  .navbar-nav {
+    padding: 0.5rem;
+  }
+  
+  .nav-link {
+    font-size: 12px;
+  }
+}
+
+/* Additional media queries and styles for larger screen sizes */
+@media screen and (min-width: 992px) {
+  .navbar-nav {
+    flex-direction: row;
+    inset: auto;
+    transform: translateX(0%);
+    padding: 0;
+    background: transparent;
+  }
+ 
+  
+  .mobile-nav-toggle {
+    display: none;
+  }
+  
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
   

@@ -28,7 +28,7 @@
 .hero-header {
 	font-size: 3rem;
 	color: #fff;
-	margin-left: -43rem;
+	margin-left: -47rem;
 	margin-top: 1rem;
 }
 
@@ -36,9 +36,9 @@
 	font-size: 1.2rem;
 	color: #fff;
 	margin-top: 1rem;
-	margin-left: 8.6rem;
+	margin-left: 4.4rem;
 	height: 10px;
-	width: 31.7%;
+	width: 36%;
 }
 
 .hero-read-more-button {
@@ -104,8 +104,9 @@ margin-top: 5rem;
 		font-size: 1.2rem;
 	color: #fff;
 	margin-top: 1rem;
-	margin-left: 4.6rem;
-	width: 66%;
+	margin-left: 2.9rem;
+	width: 80%;
+	
 	}
 
 	.hero-content {

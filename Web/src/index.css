@@ -27,3 +27,9 @@ body {
   --hero-height: calc(100vh - 20vh);
 
 }
+h1{
+
+  margin: 10vw 0 0 0;
+  margin-left: 8vw;
+ font-family: 'Times New Roman', Times, serif;
+}
