@@ -110,14 +110,17 @@
 	position: absolute;
 	width: min-content;
 	height: min-content;
-	padding: 20px 20px 12px 12px;
+	place-content: center;
+	align-items: flex-end;
+	padding: 10px 5px 5px;
+	border-radius: 0 0 100px 100px;
 	background-color: rgb(250, 249, 249);
 	
 	width: 100px;
 
 	height: 100px;
 	top: -2px;
-	left: 7rem; /* Adjusted left property */
+	left: 10rem; /* Adjusted left property */
 	border-radius: 5px 5px 100px 100px;
 	flex: none;
 	order: 0;
@@ -183,9 +186,9 @@
 	  padding: 0.3rem 1rem;
 	}
 	.logo{
-	width: 7rem;
+	width: 4rem;
 	height: auto;
-	left: 7rem;
+	left: 4rem;
 
 	
   }

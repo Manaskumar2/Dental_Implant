@@ -28,7 +28,7 @@
 .hero-header {
 	font-size: 3rem;
 	color: #fff;
-	margin-right: 44rem;
+	margin-left: -43rem;
 	margin-top: 1rem;
 }
 
@@ -36,8 +36,9 @@
 	font-size: 1.2rem;
 	color: #fff;
 	margin-top: 1rem;
-	margin-left: 4.6rem;
-	width: 36%;
+	margin-left: 8.6rem;
+	height: 10px;
+	width: 31.7%;
 }
 
 .hero-read-more-button {
@@ -46,7 +47,7 @@
 	color: var(--button-primary-text);
 	padding: 0.5rem 2rem;
 	border-radius: 40px;
-margin-top: 1rem;
+margin-top: 5rem;
 	margin-right: 54rem;
 	text-decoration: none;
 	transition: background-color 0.3s ease;
@@ -95,7 +96,7 @@ margin-top: 1rem;
 	.hero-header {
 	font-size: 3rem;
 	color: #fff;
-	margin-right: 56rem;
+	margin-left: 4rem;
 	margin-top: 5rem;
 	}
 
@@ -116,7 +117,21 @@ margin-top: 1rem;
 }
 
 .next-button {
-	margin-left: 20px;
+	margin-left: 370px;
+
+}
+.hero-read-more-button {
+	display: inline-block;
+	background-color: var(--button-primary-background);
+	color: var(--button-primary-text);
+padding: .5rem 1rem;
+border-radius: 5rem;
+	width: 10rem;
+	font-size: 1rem;
+	margin-top: 8rem;
+   text-decoration: none;
+   margin-bottom: 190px;
+margin-left: 5rem
 
 }
 }
