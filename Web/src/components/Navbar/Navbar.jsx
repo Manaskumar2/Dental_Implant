@@ -99,10 +99,14 @@ function Navbar() {
   }
 
   const scrollToBottom = () => {
+    const navToggle = document.querySelector('.mobile-nav-toggle');
+    const primaryNav = document.querySelector('.navbar-nav');
     window.scrollTo({
       top: document.documentElement.scrollHeight,
       behavior: 'smooth',
     });
+    primaryNav.setAttribute('data-visible', false);
+    navToggle.setAttribute('aria-expanded', false);
   };
 
   
@@ -159,7 +163,7 @@ function Navbar() {
       setLoading(false); // Set loading state back to false
       return;
     }
-  };
+  };  
 
   
   return (
