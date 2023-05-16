@@ -129,7 +129,9 @@
 	.navbar {
 	  top: 5px;
 	  right: 5px;
-	  border-radius: 50px;
+	  background-color: transparent;
+	  border: none;
+	  /* border-radius: 50px; */
 	  padding: 0.3rem;
 	}
   
