@@ -36,7 +36,7 @@ const createAppointement = async (req, res) => {
           <li>Name: ${data.name}</li>
           <li>Email: ${data.email}</li>
           <li>Phone: ${data.phone}</li>
-          <li>Phone: ${data.comment}</li>
+          <li>comment: ${data.comment}</li>
         </ul>
         <p>We look forward to seeing you soon.</p>
       `
